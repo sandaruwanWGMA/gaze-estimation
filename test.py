@@ -13,7 +13,7 @@ from util.preprocess import gaussian_2d
 from util.gaze import draw_gaze
 
 device = torch.device("cpu")
-img_dir = "/kaggle/input/eye-gaze-detection/TestSet"
+img_dir = "/kaggle/input/eye-gaze-detection/TestSet
 json_dir = "/kaggle/input/eye-gaze-detection/TestSet_json"
 dataset = UnityEyesDataset(img_dir=img_dir, json_dir=json_dir)
 dataloader = DataLoader(dataset, batch_size=1, shuffle=False)
